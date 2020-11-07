@@ -59,6 +59,7 @@ public class Conveyer : MonoBehaviour
             dish.transform.SetParent(parent);
             dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
             dish.gameObject.SetActive(true);
+            dish.Init();
         }
     }
 
