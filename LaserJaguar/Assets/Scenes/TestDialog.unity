@@ -1174,14 +1174,31 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 450b2943b85fe7140ae40f6ed1cef738, type: 2}
   - {fileID: 11400000, guid: 7e3a80a3e6b099547994115c5b4367c1, type: 2}
   - {fileID: 11400000, guid: a7480bf693b708547a70312480f63eae, type: 2}
+  - {fileID: 11400000, guid: 36306c8eeb02b254c82bcf196435037b, type: 2}
+  - {fileID: 11400000, guid: a2439f4a7bbf2ee48a10295783a4f5be, type: 2}
+  - {fileID: 11400000, guid: a9f18cb212d0d5642b8fa632067bf48b, type: 2}
+  - {fileID: 11400000, guid: e065914008fb02740861bf7fa79eddf4, type: 2}
+  - {fileID: 11400000, guid: 44db870912631554ba6976a33e144c6b, type: 2}
+  - {fileID: 11400000, guid: 2370958233bbe5b46a1d36f9bff6fe10, type: 2}
   - {fileID: 11400000, guid: 826317dd24eac2e42a427aa8181b3358, type: 2}
   - {fileID: 11400000, guid: 8d31fbea06ea7bd4d97c6afc4aff4b76, type: 2}
   - {fileID: 11400000, guid: 37903780ae09f99429cc3ee5a890f8e0, type: 2}
   - {fileID: 11400000, guid: 330542e1947c5d74c811c8985e7a26a6, type: 2}
+  - {fileID: 11400000, guid: 52e222fc37c4c7648ae245ef01970301, type: 2}
+  - {fileID: 11400000, guid: 5b20bc61e5129e743a04f83a54176037, type: 2}
+  - {fileID: 11400000, guid: 703bf325e271732489dff78f08affacd, type: 2}
+  - {fileID: 11400000, guid: 2086c1c2e8dbde949b1118889706d36a, type: 2}
   - {fileID: 11400000, guid: a4e4447b09b64da4e8df0ee0807578f1, type: 2}
   - {fileID: 11400000, guid: c6f87d5b538b1744fae531863c8e4410, type: 2}
   - {fileID: 11400000, guid: 70077153ed1d55649b40df583ac70bb1, type: 2}
   - {fileID: 11400000, guid: eeec65f091772db4e98c7064f0c0215d, type: 2}
+  - {fileID: 11400000, guid: c44270a56876716469433fc351d37866, type: 2}
+  - {fileID: 11400000, guid: 3a357d25e3716f5489f36145876ec8ef, type: 2}
+  - {fileID: 11400000, guid: ad209f9170057a643a9ce894e0741af3, type: 2}
+  - {fileID: 11400000, guid: 186ea42a0610b24429bd3349fb67f06a, type: 2}
+  - {fileID: 11400000, guid: 1b944d23915159443b4edf7f16a9a9e6, type: 2}
+  - {fileID: 11400000, guid: 7db8489d981dfce4d91e0cec56e18509, type: 2}
+  - {fileID: 11400000, guid: 9cb3f70539956a1478c697b4cbd9cc3d, type: 2}
   features:
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E1"
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E2"
@@ -1239,7 +1256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81631070a21bbe40918bcaed2a3febe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: Example
+  fileName: Example2
   folder: Russian
   node:
   - npcText: hi
@@ -1253,11 +1270,15 @@ MonoBehaviour:
     - text: bye
       toNode: 0
       exit: 1
+    isWin: 0
+    isLose: 1
   - npcText: bye
     playerAnswer:
     - text: ok
       toNode: 0
       exit: 1
+    isWin: 1
+    isLose: 0
 --- !u!4 &1791691562
 Transform:
   m_ObjectHideFlags: 0
@@ -1353,7 +1374,7 @@ GameObject:
   - component: {fileID: 2098858676}
   - component: {fileID: 2098858675}
   m_Layer: 0
-  m_Name: Client
+  m_Name: Client1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1372,10 +1393,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Robot
+  DialogueName: Customer1-2
   requiredFeaturesForFirst:
-  - "\u043C\u0435\u0434\u044C"
+  - "\u0430\u043B\u044E\u043C\u0438\u043D\u0438\u0439"
   requiredFeaturesForSecond:
-  - "\u043A\u0438\u0441\u043B\u043E\u0442\u0430"
+  - "\u043E\u0440\u0433\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F"
   requiredFeaturesForDrink:
   - "\u043C\u0430\u0441\u043B\u043E"
 --- !u!4 &2098858676
@@ -1557,7 +1579,7 @@ PrefabInstance:
     - target: {fileID: 4074037121644235973, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.1412749
+      value: 0.00027356233
       objectReference: {fileID: 0}
     - target: {fileID: 4074037121926036476, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}

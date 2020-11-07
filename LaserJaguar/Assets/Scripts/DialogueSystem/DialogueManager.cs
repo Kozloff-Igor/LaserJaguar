@@ -78,6 +78,12 @@ public class DialogueManager : MonoBehaviour
                     dialogue = new Dialogue();
                     dialogue.answer = new List<Answer>();
                     dialogue.npcText = reader.GetAttribute("npcText");
+
+                    bool isWin;
+                    if (bool.TryParse(reader.GetAttribute("isWin"), out isWin)) dialogue.isWin = isWin; else dialogue.isWin = false;
+
+                    bool isLose;
+                    if (bool.TryParse(reader.GetAttribute("isLose"), out isWin)) dialogue.isLose = isWin; else dialogue.isLose = false;
                     node.Add(dialogue);
 
                     XmlReader inner = reader.ReadSubtree();
@@ -189,7 +195,37 @@ public class DialogueManager : MonoBehaviour
         if (features.Length > 0) npcText = npcText.Replace("$ingr0", features[0]);
         if (features.Length > 1) npcText = npcText.Replace("$ingr1", features[1]);
         if (features.Length > 2) npcText = npcText.Replace("$ingr2", features[2]);
+        if (features.Length > 3) npcText = npcText.Replace("$ingr3", features[3]);
+        if (features.Length > 4) npcText = npcText.Replace("$ingr4", features[4]);
+        if (features.Length > 5) npcText = npcText.Replace("$ingr5", features[5]);
+        if (features.Length > 6) npcText = npcText.Replace("$ingr6", features[6]);
+        if (features.Length > 7) npcText = npcText.Replace("$ingr7", features[7]);
+        if (features.Length > 8) npcText = npcText.Replace("$ingr8", features[8]);
         bubble.text.text = npcText;
+    }
+
+    public void StartWin()
+    {
+        for (var i = 0; i < node.Count; i++)
+        {
+            if (node[i].isWin)
+            {
+                BuildDialogue(i);
+                break;
+            }
+        }
+    }
+
+    public void StartLose()
+    {
+        for (var i = 0; i < node.Count; i++)
+        {
+            if (node[i].isLose)
+            {
+                BuildDialogue(i);
+                break;
+            }
+        }
     }
 }
 
@@ -197,6 +233,8 @@ class Dialogue
 {
     public string npcText;
     public List<Answer> answer;
+    public bool isWin;
+    public bool isLose;
 }
 
 

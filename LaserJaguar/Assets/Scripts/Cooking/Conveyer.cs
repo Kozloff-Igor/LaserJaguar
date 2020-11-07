@@ -13,11 +13,13 @@ public class Conveyer : MonoBehaviour
 
     private Dictionary<DishType, Dish> table = new Dictionary<DishType, Dish>();
 
-    private List<Dish> firsts;
-    private List<Dish> seconds;
-    private List<Dish> drinks;
+    private List<Dish> firsts = new List<Dish>();
+    private List<Dish> seconds = new List<Dish>();
+    private List<Dish> drinks = new List<Dish>();
     public void StartCooking(Client client)
     {
+        ClearConveyer();
+
         var FirstDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.First);
         var reqFirstDishes = FirstDishes.Where(d => client.requiredFeaturesForFirst.Count(f => d.features.Contains(f)) == client.requiredFeaturesForFirst.Length).ToArray();
         var dish = reqFirstDishes[Random.Range(0, reqFirstDishes.Length)];
@@ -44,6 +46,22 @@ public class Conveyer : MonoBehaviour
         PutDishes(drinks, drinkGroup);
     }
 
+    void ClearConveyer()
+    {
+        ClearGroup(firsts);
+        ClearGroup(seconds);
+        ClearGroup(drinks);
+    }
+
+    void ClearGroup(List<Dish> group)
+    {
+
+        foreach (var dish in group)
+        {
+            dish.transform.SetParent(GlobalVariables.instance.canvas);
+            dish.gameObject.SetActive(false);
+        }
+    }
     void PutDishes(List<Dish> dishes, Transform parent)
     {
         for (var i = 0; i < dishes.Count; i++)

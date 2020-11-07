@@ -10,7 +10,8 @@ public class ClientManager : MonoBehaviour
     public void StartOrder()
     {
         FindObjectOfType<Conveyer>().StartCooking(currentClient);
-        DialogueManager.Internal.DialogueStart("Example", currentClient.requiredFeaturesForFirst);
+        var reqFeats = currentClient.requiredFeaturesForFirst.Concat(currentClient.requiredFeaturesForSecond).Concat(currentClient.requiredFeaturesForDrink).ToArray();
+        DialogueManager.Internal.DialogueStart(currentClient.DialogueName, reqFeats);
     }
 
     public void CompleteOrder(Dish first, Dish second, Dish drink)
@@ -24,8 +25,10 @@ public class ClientManager : MonoBehaviour
             first.AddVisibleFeatures(currentClient.requiredFeaturesForFirst);
             second.AddVisibleFeatures(currentClient.requiredFeaturesForSecond);
             drink.AddVisibleFeatures(currentClient.requiredFeaturesForDrink);
+            DialogueManager.Internal.StartWin();
         }
         Debug.Log(result);
+        DialogueManager.Internal.StartLose();
     }
 
     bool CheckDish(string[] reqFeatures, Dish dish)

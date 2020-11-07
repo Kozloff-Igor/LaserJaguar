@@ -34,6 +34,20 @@ public class DialogueGenerator : MonoBehaviour
             attribute.Value = node[j].npcText;
             userNode.Attributes.Append(attribute);
 
+            if (node[j].isWin)
+            {
+                attribute = xmlDoc.CreateAttribute("isWin");
+                attribute.Value = node[j].isWin.ToString();
+                userNode.Attributes.Append(attribute);
+            }
+
+            if (node[j].isLose)
+            {
+                attribute = xmlDoc.CreateAttribute("isLose");
+                attribute.Value = node[j].isLose.ToString();
+                userNode.Attributes.Append(attribute);
+            }
+
             for (int i = 0; i < node[j].playerAnswer.Length; i++)
             {
                 element = xmlDoc.CreateElement("answer");
@@ -56,6 +70,8 @@ public class DialogueNode
 {
     public string npcText;
     public PlayerAnswer[] playerAnswer;
+    public bool isWin;
+    public bool isLose;
 }
 
 

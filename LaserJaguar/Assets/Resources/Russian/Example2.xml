@@ -1,0 +1,10 @@
+<dialogue name="Example2">
+  <node id="0" npcText="hi" isLose="True">
+    <answer text="hh" toNode="1" />
+    <answer text="bye" exit="True" />
+    <answer text="bye" exit="True" />
+  </node>
+  <node id="1" npcText="bye" isWin="True">
+    <answer text="ok" exit="True" />
+  </node>
+</dialogue>

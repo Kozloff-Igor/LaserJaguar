@@ -5,6 +5,7 @@ using UnityEngine;
 public class Client : MonoBehaviour
 {
     public string Name;
+    public string DialogueName;
     //public Dish firstDish;
     //public Dish secondDish;
     //public Dish Drink;
