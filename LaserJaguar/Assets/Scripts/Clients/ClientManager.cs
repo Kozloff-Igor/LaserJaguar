@@ -5,8 +5,15 @@ using UnityEngine;
 
 public class ClientManager : MonoBehaviour
 {
+    public Client[] allClients;
     public Client currentClient;
 
+    private Queue<Client> clients = new Queue<Client>();
+
+    private void Start()
+    {
+        FillQueue();
+    }
     public void StartOrder()
     {
         FindObjectOfType<Conveyer>().StartCooking(currentClient);
@@ -35,5 +42,20 @@ public class ClientManager : MonoBehaviour
     {
         return reqFeatures.Count(f => dish.features.Contains(f)) == reqFeatures.Length;
 
+    }
+
+    void FillQueue()
+    {
+        foreach (var client in allClients)
+        {
+            clients.Enqueue(client);
+        }
+    }
+
+    public void NextClient()
+    {
+        if (currentClient) Destroy(currentClient);
+        currentClient = Instantiate(clients.Dequeue(), transform);
+        StartOrder();
     }
 }

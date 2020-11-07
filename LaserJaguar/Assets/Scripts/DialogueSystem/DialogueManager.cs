@@ -83,7 +83,7 @@ public class DialogueManager : MonoBehaviour
                     if (bool.TryParse(reader.GetAttribute("isWin"), out isWin)) dialogue.isWin = isWin; else dialogue.isWin = false;
 
                     bool isLose;
-                    if (bool.TryParse(reader.GetAttribute("isLose"), out isWin)) dialogue.isLose = isWin; else dialogue.isLose = false;
+                    if (bool.TryParse(reader.GetAttribute("isLose"), out isLose)) dialogue.isLose = isLose; else dialogue.isLose = false;
                     node.Add(dialogue);
 
                     XmlReader inner = reader.ReadSubtree();
@@ -177,6 +177,8 @@ public class DialogueManager : MonoBehaviour
         scrollRect.gameObject.SetActive(false);
         bubble.gameObject.SetActive(false);
         ClearDialogue();
+
+        FindObjectOfType<ClientManager>().NextClient();
     }
 
     void BuildDialogue(int current)
