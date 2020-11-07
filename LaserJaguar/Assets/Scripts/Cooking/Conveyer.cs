@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Conveyer : MonoBehaviour
 {
     public RectTransform firstGroup;
+    public RectTransform tableGroup;
 
+    private List<Dish> table = new List<Dish>();
     private List<Dish> first;
     public void StartCooking(Client client)
     {
@@ -28,6 +31,31 @@ public class Conveyer : MonoBehaviour
         foreach (var dish in first)
         {
             var dishObj = GameObject.Instantiate(dish, firstGroup);
+            dishObj.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dishObj));
         }
+    }
+
+    public void MoveToTable(Dish dish)
+    {
+        table.Add(dish);
+        dish.transform.SetParent(tableGroup);
+        dish.GetComponent<Button>().onClick.RemoveAllListeners();
+        dish.GetComponent<Button>().onClick.AddListener(() => MoveBack(dish));
+    }
+
+    public void MoveBack(Dish dish)
+    {
+        table.Remove(dish);
+        switch (dish.type)
+        {
+            case DishType.First:
+                dish.transform.SetParent(firstGroup);
+                break;
+            default:
+                dish.transform.SetParent(firstGroup);
+                break;
+        }
+        dish.GetComponent<Button>().onClick.RemoveAllListeners();
+        dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
     }
 }

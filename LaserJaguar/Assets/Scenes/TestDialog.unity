@@ -369,7 +369,7 @@ RectTransform:
   - {fileID: 1185629990}
   - {fileID: 1455549390}
   m_Father: {fileID: 1132977049}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -422,6 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstGroup: {fileID: 1185629990}
+  tableGroup: {fileID: 983954426}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,8 +717,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 206888380}
-  - {fileID: 175446055}
   - {fileID: 496676289}
+  - {fileID: 175446055}
   - {fileID: 983954426}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1286,7 +1287,7 @@ PrefabInstance:
     - target: {fileID: 4074037121644235973, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000007053705
+      value: 0.000011385086
       objectReference: {fileID: 0}
     - target: {fileID: 4074037121926036476, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
