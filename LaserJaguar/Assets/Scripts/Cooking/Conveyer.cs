@@ -75,8 +75,11 @@ public class Conveyer : MonoBehaviour
         {
             //var dishObj = GameObject.Instantiate(dish, parent);
             dish.transform.SetParent(parent);
-            dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
+            dish.full.onClick.AddListener(() => MoveToTable(dish));
+            dish.small.onClick.AddListener(() => MoveBack(dish));
+            dish.SetSize(true);
             dish.gameObject.SetActive(true);
+            dish.SetSize(true);
             dish.Init();
         }
     }
@@ -85,14 +88,16 @@ public class Conveyer : MonoBehaviour
     {
         if (table.ContainsKey(dish.type)) MoveBack(table[dish.type]);
         table.Add(dish.type, dish);
+        dish.SetSize(false);
         dish.transform.SetParent(tableGroup);
-        dish.GetComponent<Button>().onClick.RemoveAllListeners();
-        dish.GetComponent<Button>().onClick.AddListener(() => MoveBack(dish));
+        //dish.GetComponent<Button>().onClick.RemoveAllListeners();
+        //dish.GetComponent<Button>().onClick.AddListener(() => MoveBack(dish));
     }
 
     public void MoveBack(Dish dish)
     {
         table.Remove(dish.type);
+        dish.SetSize(true);
         switch (dish.type)
         {
             case DishType.First:
@@ -105,8 +110,9 @@ public class Conveyer : MonoBehaviour
                 dish.transform.SetParent(drinkGroup);
                 break;
         }
-        dish.GetComponent<Button>().onClick.RemoveAllListeners();
-        dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
+
+        //dish.GetComponent<Button>().onClick.RemoveAllListeners();
+        //dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
     }
 
     public void CompleteOrder()

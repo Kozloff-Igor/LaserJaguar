@@ -10,7 +10,8 @@ public class Dish : MonoBehaviour
     public Text nameText;
     public Image image;
     public Transform featureGroup;
-    //public Text featurePrefab;
+    public Button full;
+    public Button small;
 
     public string Name { get => data.Name; }
     public DishType type { get => data.type; }
@@ -55,6 +56,11 @@ public class Dish : MonoBehaviour
         }
     }
 
+    public void SetSize(bool isFull)
+    {
+        full.gameObject.SetActive(isFull);
+        small.gameObject.SetActive(!isFull);
+    }
 }
 
 public enum DishType
