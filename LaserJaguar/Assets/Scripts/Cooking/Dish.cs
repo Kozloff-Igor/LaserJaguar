@@ -60,6 +60,12 @@ public class Dish : MonoBehaviour
     {
         full.gameObject.SetActive(isFull);
         small.gameObject.SetActive(!isFull);
+        if (isFull)
+        {
+            GetComponent<RectTransform>().sizeDelta = new Vector2(full.GetComponent<RectTransform>().sizeDelta.x, GetComponent<RectTransform>().sizeDelta.y);
+        }
+        else
+            GetComponent<RectTransform>().sizeDelta = new Vector2(small.GetComponent<RectTransform>().sizeDelta.x, GetComponent<RectTransform>().sizeDelta.y);
     }
 }
 
