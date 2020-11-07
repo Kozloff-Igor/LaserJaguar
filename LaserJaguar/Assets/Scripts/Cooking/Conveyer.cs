@@ -7,37 +7,63 @@ using UnityEngine.UI;
 public class Conveyer : MonoBehaviour
 {
     public RectTransform firstGroup;
+    public RectTransform secondGroup;
+    public RectTransform drinkGroup;
     public RectTransform tableGroup;
 
-    private List<Dish> table = new List<Dish>();
-    private List<Dish> first;
+    private Dictionary<DishType, Dish> table = new Dictionary<DishType, Dish>();
+
+    private List<Dish> firsts;
+    private List<Dish> seconds;
+    private List<Dish> drinks;
     public void StartCooking(Client client)
     {
         var FirstDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.First);
         var reqFirstDishes = FirstDishes.Where(d => client.requiredFeaturesForFirst.Count(f => d.features.Contains(f)) == client.requiredFeaturesForFirst.Length).ToArray();
         var dish = reqFirstDishes[Random.Range(0, reqFirstDishes.Length)];
 
-        first = FirstDishes.Where(d => d != dish).Take(2).ToList();
-        first.Add(dish);
+        firsts = FirstDishes.Where(d => d != dish).Take(2).ToList();
+        firsts.Add(dish);
+        PutDishes(firsts, firstGroup);
 
-        var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.features.Count(f => client.requiredFeaturesForSecond.Contains(f)) > 1 && d.type == DishType.Second).ToArray();
-        var Drinks = GlobalVariables.instance.Dishes.Where(d => d.features.Count(f => client.requiredFeaturesForDrink.Contains(f)) > 1 && d.type == DishType.Drink).ToArray();
+        var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Second);
+        var reqSecDishes = SecondDishes.Where(d => client.requiredFeaturesForSecond.Count(f => d.features.Contains(f)) == client.requiredFeaturesForSecond.Length).ToArray();
+        var sDish = reqFirstDishes[Random.Range(0, reqSecDishes.Length)];
 
-        PutDishes();
+        seconds = SecondDishes.Where(d => d != sDish).Take(2).ToList();
+        seconds.Add(sDish);
+        PutDishes(seconds, secondGroup);
+
+        var Drinks = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Drink);
+        var reqDrinks = Drinks.Where(d => client.requiredFeaturesForDrink.Count(f => d.features.Contains(f)) == client.requiredFeaturesForDrink.Length).ToArray();
+        var drink = reqDrinks[Random.Range(0, reqDrinks.Length)];
+
+        drinks = Drinks.Where(d => d != drink).Take(2).ToList();
+        drinks.Add(drink);
+
+        PutDishes(drinks, drinkGroup);
     }
 
-    void PutDishes()
+    void PutDishes(List<Dish> dishes, Transform parent)
     {
-        foreach (var dish in first)
+        for (var i = 0; i < dishes.Count; i++)
         {
-            var dishObj = GameObject.Instantiate(dish, firstGroup);
+            var random = Random.Range(0, dishes.Count);
+            var temp = dishes[random];
+            dishes[random] = dishes[i];
+            dishes[i] = temp;
+        }
+        foreach (var dish in dishes)
+        {
+            var dishObj = GameObject.Instantiate(dish, parent);
             dishObj.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dishObj));
         }
     }
 
     public void MoveToTable(Dish dish)
     {
-        table.Add(dish);
+        if (table.ContainsKey(dish.type)) MoveBack(table[dish.type]);
+        table.Add(dish.type, dish);
         dish.transform.SetParent(tableGroup);
         dish.GetComponent<Button>().onClick.RemoveAllListeners();
         dish.GetComponent<Button>().onClick.AddListener(() => MoveBack(dish));
@@ -45,17 +71,27 @@ public class Conveyer : MonoBehaviour
 
     public void MoveBack(Dish dish)
     {
-        table.Remove(dish);
+        table.Remove(dish.type);
         switch (dish.type)
         {
             case DishType.First:
                 dish.transform.SetParent(firstGroup);
                 break;
+            case DishType.Second:
+                dish.transform.SetParent(secondGroup);
+                break;
             default:
-                dish.transform.SetParent(firstGroup);
+                dish.transform.SetParent(drinkGroup);
                 break;
         }
         dish.GetComponent<Button>().onClick.RemoveAllListeners();
         dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
+    }
+
+    public void CompleteOrder()
+    {
+        if (!table.ContainsKey(DishType.First) || !table.ContainsKey(DishType.Second) || !table.ContainsKey(DishType.Drink))
+            return;
+        FindObjectOfType<ClientManager>().CompleteOrder(table[DishType.First], table[DishType.Second], table[DishType.Drink]);
     }
 }
