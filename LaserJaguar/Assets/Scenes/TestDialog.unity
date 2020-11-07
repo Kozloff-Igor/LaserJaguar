@@ -933,7 +933,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1280}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -957,7 +957,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1470,21 +1470,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1132977049}
     m_Modifications:
-    - target: {fileID: 4074037120355723584, guid: b7e498104a223a14e8c53d4a3331c68e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9c5df651ca3f6ca4cb457c0e5fce0a9e,
-        type: 3}
-    - target: {fileID: 4074037120355723585, guid: b7e498104a223a14e8c53d4a3331c68e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 617
-      objectReference: {fileID: 0}
-    - target: {fileID: 4074037120355723585, guid: b7e498104a223a14e8c53d4a3331c68e,
+    - target: {fileID: 4074037120463614599, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 160
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074037120463614599, guid: b7e498104a223a14e8c53d4a3331c68e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 387.75446
       objectReference: {fileID: 0}
     - target: {fileID: 4074037121164889608, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
@@ -1599,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 4074037121644235973, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00006766109
+      value: 0.0001464714
       objectReference: {fileID: 0}
     - target: {fileID: 4074037121926036476, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}

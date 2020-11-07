@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3588174733494452436}
   - component: {fileID: 3588174733494452438}
-  - component: {fileID: 3588174733494452439}
+  - component: {fileID: 1616971969}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -45,7 +45,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3588174733494452437}
   m_CullTransparentMesh: 0
---- !u!114 &3588174733494452439
+--- !u!114 &1616971969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,18 +58,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.084905684, g: 0.08370419, b: 0.08370419, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 335bc6d0f6e292c4194a3df565bf44ff, type: 3}
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!1 &3588174734530120015
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,8 +115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 391.2, y: -18.099998}
-  m_SizeDelta: {x: 770.08057, y: 30}
+  m_AnchoredPosition: {x: 397.74, y: -35.9}
+  m_SizeDelta: {x: 783.1692, y: 65.72866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3588174734530120051
 CanvasRenderer:
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 3588174734530120049}
-  text: {fileID: 3588174733494452439}
+  text: {fileID: 1616971969}
   rect: {fileID: 3588174734530120050}
 --- !u!1 &4074037120355723586
 GameObject:
@@ -249,8 +249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 319.2, y: 710.1}
-  m_SizeDelta: {x: 393.27377, y: 199.17694}
+  m_AnchoredPosition: {x: 185.9, y: 583}
+  m_SizeDelta: {x: 509.50583, y: 275.09824}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4074037120355723615
 CanvasRenderer:
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9c5df651ca3f6ca4cb457c0e5fce0a9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -337,8 +337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -6}
-  m_SizeDelta: {x: 129.932, y: 94.263}
+  m_AnchoredPosition: {x: 12.2, y: 5.93}
+  m_SizeDelta: {x: 401.63855, y: 182.84445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4074037120463614597
 CanvasRenderer:
@@ -361,18 +361,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.11320752, g: 0.11267352, b: 0.11267352, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 335bc6d0f6e292c4194a3df565bf44ff, type: 3}
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -701,7 +701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000048246868}
+  m_AnchoredPosition: {x: 0, y: 0.00008031046}
   m_SizeDelta: {x: 0, y: 128.80722}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4074037121644235972
