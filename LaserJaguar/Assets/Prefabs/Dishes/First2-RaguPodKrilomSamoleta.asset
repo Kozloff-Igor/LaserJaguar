@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
-  m_Name: Drink4
+  m_Name: First2-RaguPodKrilomSamoleta
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  Name: Drink1
-  type: 2
+  Name: "\u0420\u0430\u0433\u0443 \"\u041F\u043E\u0434 \u043A\u0440\u044B\u043B\u043E\u043C
+    \u0441\u0430\u043C\u043E\u043B\u0451\u0442\u0430\""
+  type: 0
   features:
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E7"
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E8"
+  - "\u0430\u043B\u044E\u043C\u0438\u043D\u0438\u0439"
