@@ -390,6 +390,7 @@ MonoBehaviour:
   - {fileID: 6629279035052344501, guid: 344d845f52e2c294f88ef10f85ce9e6b, type: 3}
   - {fileID: 6629279035052344501, guid: a36a11d7c2a07aa45a530cbbb0c3b80c, type: 3}
   - {fileID: 6629279035052344501, guid: e335dc99497ecd6469897568c3184e82, type: 3}
+  - {fileID: 6629279035052344501, guid: ed0d7b5ef85189c479f75248bb887180, type: 3}
   currentClient: {fileID: 0}
 --- !u!1 &433467751
 GameObject:
@@ -1597,7 +1598,7 @@ PrefabInstance:
     - target: {fileID: 4074037121644235973, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000004793331
+      value: -0.000026838092
       objectReference: {fileID: 0}
     - target: {fileID: 4074037121926036476, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
@@ -1622,6 +1623,11 @@ PrefabInstance:
     - target: {fileID: 4074037122336124268, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074037122336124268, guid: b7e498104a223a14e8c53d4a3331c68e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
