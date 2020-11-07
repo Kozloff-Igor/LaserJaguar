@@ -34,8 +34,12 @@ public class ClientManager : MonoBehaviour
             drink.AddVisibleFeatures(currentClient.requiredFeaturesForDrink);
             DialogueManager.Internal.StartWin();
         }
-        Debug.Log(result);
-        DialogueManager.Internal.StartLose();
+        else
+        {
+            if (currentClient.isBoss)
+                FillQueue();
+            DialogueManager.Internal.StartLose();
+        }
     }
 
     bool CheckDish(string[] reqFeatures, Dish dish)

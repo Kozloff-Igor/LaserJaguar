@@ -6,6 +6,7 @@ public class Client : MonoBehaviour
 {
     public string Name;
     public string DialogueName;
+    public bool isBoss;
     //public Dish firstDish;
     //public Dish secondDish;
     //public Dish Drink;
