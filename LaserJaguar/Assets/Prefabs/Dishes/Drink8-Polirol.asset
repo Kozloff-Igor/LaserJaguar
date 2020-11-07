@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
-  m_Name: Drink2
+  m_Name: Drink8-Polirol
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  Name: Drink1
+  Name: "\u041F\u043E\u043B\u0438\u0440\u043E\u043B\u044C"
   type: 2
   features:
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E7"
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E8"
+  - "\u043A\u0435\u0440\u043E\u0441\u0438\u043D"
+  - "\u043B\u0451\u0433\u043A\u043E\u0435"
+  - "\u0430\u043D\u0442\u0438\u0444\u0440\u0438\u0437"

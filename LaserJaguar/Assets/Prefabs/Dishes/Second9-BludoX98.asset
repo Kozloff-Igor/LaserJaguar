@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
-  m_Name: Drink3
+  m_Name: Second9-BludoX98
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  Name: Drink1
-  type: 2
+  Name: "\u0411\u043B\u044E\u0434\u043E \u0425-98"
+  type: 1
   features:
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E7"
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E8"
+  - "\u0449\u0451\u043B\u043E\u0447\u044C"
+  - "\u043D\u0435\u043E\u0440\u0433\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F"
+  - "\u0434\u043B\u044F \u043A\u0440\u0430\u0441\u043E\u0442\u044B"

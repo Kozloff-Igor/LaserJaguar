@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
-  m_Name: First2
+  m_Name: First1-StakeFromMetallama
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  Name: F1
+  Name: "\u0421\u0442\u0435\u0439\u043A \u0438\u0437 \u043C\u0435\u0442\u0430\u043B\u043B\u0430\u043C\u044B"
   type: 0
   features:
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E1"
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E2"
+  - "\u043C\u0435\u0434\u044C"
