@@ -10,6 +10,7 @@ public class GlobalVariables : MonoBehaviour
     public DishData[] DishData;
     public string[] features;
     public Dish dishPrefab;
+    public Transform canvas;
 
     void Start()
     {
@@ -30,7 +31,7 @@ public class GlobalVariables : MonoBehaviour
     {
         foreach (var dishData in DishData)
         {
-            var dish = Instantiate(dishPrefab);
+            var dish = Instantiate(dishPrefab, canvas);
             dish.data = dishData;
             dish.gameObject.SetActive(false);
             Dishes.Add(dish);
