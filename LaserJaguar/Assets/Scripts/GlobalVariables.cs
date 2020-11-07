@@ -6,14 +6,17 @@ public class GlobalVariables : MonoBehaviour
 {
     public static GlobalVariables instance = null;
 
-    public Dish[] Dishes;
+    public List<Dish> Dishes;
+    public DishData[] DishData;
     public string[] features;
+    public Dish dishPrefab;
 
     void Start()
     {
         if (instance == null)
         {
             instance = this;
+            CreateDishes();
         }
         else if (instance == this)
         {
@@ -23,5 +26,14 @@ public class GlobalVariables : MonoBehaviour
         //DontDestroyOnLoad(gameObject);
     }
 
-
+    void CreateDishes()
+    {
+        foreach (var dishData in DishData)
+        {
+            var dish = Instantiate(dishPrefab);
+            dish.data = dishData;
+            dish.gameObject.SetActive(false);
+            Dishes.Add(dish);
+        }
+    }
 }

@@ -18,16 +18,19 @@ public class ClientManager : MonoBehaviour
         var result = CheckDish(currentClient.requiredFeaturesForFirst, first)
             && CheckDish(currentClient.requiredFeaturesForSecond, second)
              && CheckDish(currentClient.requiredFeaturesForDrink, drink);
+
+        if (result)
+        {
+            first.AddVisibleFeatures(currentClient.requiredFeaturesForFirst);
+            second.AddVisibleFeatures(currentClient.requiredFeaturesForSecond);
+            drink.AddVisibleFeatures(currentClient.requiredFeaturesForDrink);
+        }
         Debug.Log(result);
     }
 
     bool CheckDish(string[] reqFeatures, Dish dish)
     {
-        var isGood = reqFeatures.Count(f => dish.features.Contains(f)) == reqFeatures.Length;
-        if (isGood)
-        {
-            dish.visibleFeatures = dish.visibleFeatures.Concat(reqFeatures.Where(reqF => !dish.visibleFeatures.Contains(reqF))).ToList();
-        }
-        return isGood;
+        return reqFeatures.Count(f => dish.features.Contains(f)) == reqFeatures.Length;
+
     }
 }

@@ -1168,17 +1168,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb0b435fca602a4db7d9ed6aba399da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dishes:
-  - {fileID: 8691584231566743264, guid: 6dffcce45378cb5449e000d76b4437b8, type: 3}
-  - {fileID: 8102080952513802021, guid: 9249d856d5a3cad46b944462d1ad8ff3, type: 3}
-  - {fileID: 7221166728027315349, guid: 0916b8310bd922348a2059d7f277b338, type: 3}
-  - {fileID: 7379564824251093916, guid: 9d19a4d20302ea045a5ad33ccdd57dc1, type: 3}
-  - {fileID: 7379564824251093916, guid: d59c5548c392c344d9b5145eda1d4871, type: 3}
-  - {fileID: 7379564824251093916, guid: 15aca66d28a87f344850618fe6ac2955, type: 3}
-  - {fileID: 7221166728027315349, guid: 1eae5766354b9e44c968f4d097d9b7c0, type: 3}
-  - {fileID: 8102080952513802021, guid: 5cd9c20cefdcffa468061127cfa76142, type: 3}
-  - {fileID: 8691584231566743264, guid: 61f95316c0a9644488cd13404449877d, type: 3}
-  - {fileID: 8691584231566743264, guid: 2aaf43d500bcf68408738a62831ff017, type: 3}
+  Dishes: []
+  DishData:
+  - {fileID: 11400000, guid: 5e9e77065d575994494205b66ae08e73, type: 2}
+  - {fileID: 11400000, guid: 450b2943b85fe7140ae40f6ed1cef738, type: 2}
+  - {fileID: 11400000, guid: 7e3a80a3e6b099547994115c5b4367c1, type: 2}
+  - {fileID: 11400000, guid: a7480bf693b708547a70312480f63eae, type: 2}
+  - {fileID: 11400000, guid: 826317dd24eac2e42a427aa8181b3358, type: 2}
+  - {fileID: 11400000, guid: 8d31fbea06ea7bd4d97c6afc4aff4b76, type: 2}
+  - {fileID: 11400000, guid: 37903780ae09f99429cc3ee5a890f8e0, type: 2}
+  - {fileID: 11400000, guid: 330542e1947c5d74c811c8985e7a26a6, type: 2}
+  - {fileID: 11400000, guid: a4e4447b09b64da4e8df0ee0807578f1, type: 2}
+  - {fileID: 11400000, guid: c6f87d5b538b1744fae531863c8e4410, type: 2}
+  - {fileID: 11400000, guid: 70077153ed1d55649b40df583ac70bb1, type: 2}
+  - {fileID: 11400000, guid: eeec65f091772db4e98c7064f0c0215d, type: 2}
   features:
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E1"
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E2"
@@ -1190,6 +1193,8 @@ MonoBehaviour:
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E8"
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E9"
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E10"
+  dishPrefab: {fileID: 8691584231566743264, guid: 6dffcce45378cb5449e000d76b4437b8,
+    type: 3}
 --- !u!4 &1712387676
 Transform:
   m_ObjectHideFlags: 0
@@ -1369,9 +1374,9 @@ MonoBehaviour:
   requiredFeaturesForFirst:
   - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E1"
   requiredFeaturesForSecond:
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E3"
+  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E4"
   requiredFeaturesForDrink:
-  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E6"
+  - "\u0441\u0432\u043E\u0439\u0441\u0442\u0432\u043E7"
 --- !u!4 &2098858676
 Transform:
   m_ObjectHideFlags: 0
@@ -1506,7 +1511,7 @@ PrefabInstance:
     - target: {fileID: 4074037121644235973, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00001452399
+      value: 0.000015357664
       objectReference: {fileID: 0}
     - target: {fileID: 4074037121926036476, guid: b7e498104a223a14e8c53d4a3331c68e,
         type: 3}

@@ -28,7 +28,7 @@ public class Conveyer : MonoBehaviour
 
         var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Second);
         var reqSecDishes = SecondDishes.Where(d => client.requiredFeaturesForSecond.Count(f => d.features.Contains(f)) == client.requiredFeaturesForSecond.Length).ToArray();
-        var sDish = reqFirstDishes[Random.Range(0, reqSecDishes.Length)];
+        var sDish = reqSecDishes[Random.Range(0, reqSecDishes.Length)];
 
         seconds = SecondDishes.Where(d => d != sDish).Take(2).ToList();
         seconds.Add(sDish);
@@ -55,8 +55,10 @@ public class Conveyer : MonoBehaviour
         }
         foreach (var dish in dishes)
         {
-            var dishObj = GameObject.Instantiate(dish, parent);
-            dishObj.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dishObj));
+            //var dishObj = GameObject.Instantiate(dish, parent);
+            dish.transform.SetParent(parent);
+            dish.GetComponent<Button>().onClick.AddListener(() => MoveToTable(dish));
+            dish.gameObject.SetActive(true);
         }
     }
 
