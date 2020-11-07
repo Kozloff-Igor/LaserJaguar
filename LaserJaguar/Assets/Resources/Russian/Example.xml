@@ -1,0 +1,10 @@
+<dialogue name="Example">
+  <node id="0" npcText="Привет, мой юный друг! Хочу $ingr0 и $ingr1 и $ingr2">
+    <answer text="Привет" toNode="1" />
+    <answer text="покасики покасики покасики покасики покасики покасики покасики покасики покасики" exit="True" />
+    <answer text="bye" exit="True" />
+  </node>
+  <node id="1" npcText="bye bye bye bye bye bye bye bye bye bye bye">
+    <answer text="ok" exit="True" />
+  </node>
+</dialogue>
