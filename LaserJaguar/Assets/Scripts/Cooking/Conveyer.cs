@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,8 @@ public class Conveyer : MonoBehaviour
     public RectTransform tableFirst;
     public RectTransform tableSecond;
     public RectTransform tableDrink;
+
+    public GameObject waring;
 
     private Dictionary<DishType, Dish> table = new Dictionary<DishType, Dish>();
 
@@ -160,7 +163,10 @@ public class Conveyer : MonoBehaviour
     public void CompleteOrder()
     {
         if (!table.ContainsKey(DishType.First) || !table.ContainsKey(DishType.Second) || !table.ContainsKey(DishType.Drink))
+        {
+            waring.SetActive(true);
             return;
+        }
         FindObjectOfType<ClientManager>().CompleteOrder(table[DishType.First], table[DishType.Second], table[DishType.Drink]);
         ClearConveyer();
     }
