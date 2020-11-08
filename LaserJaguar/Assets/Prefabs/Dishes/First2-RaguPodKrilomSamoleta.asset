@@ -18,3 +18,6 @@ MonoBehaviour:
   type: 0
   features:
   - "\u0430\u043B\u044E\u043C\u0438\u043D\u0438\u0439"
+  openFeatures:
+  - "\u0430\u043B\u044E\u043C\u0438\u043D\u0438\u0439"
+  Tier: 1
