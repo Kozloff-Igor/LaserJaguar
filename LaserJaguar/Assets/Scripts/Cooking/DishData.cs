@@ -9,4 +9,5 @@ public class DishData : ScriptableObject
     public string Name;
     public DishType type;
     public string[] features;
+    public string[] openFeatures;
 }
