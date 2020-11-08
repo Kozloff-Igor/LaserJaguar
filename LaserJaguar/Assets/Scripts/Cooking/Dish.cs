@@ -30,7 +30,10 @@ public class Dish : MonoBehaviour
     {
         nameText.text = data.Name;
         AddVisibleFeatures(data.openFeatures);
-        // добавить спрайт
+
+        image.sprite = data.sprite;
+        small.GetComponent<Image>().sprite = data.sprite;
+
         RefreshFeatures();
     }
 
