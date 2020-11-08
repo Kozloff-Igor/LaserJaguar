@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: Drink2-B5200
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 4820688438788214557, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0411-5200"
   type: 2
   features:

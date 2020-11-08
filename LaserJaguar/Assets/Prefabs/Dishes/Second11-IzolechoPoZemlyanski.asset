@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: Second11-IzolechoPoZemlyanski
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -4169399362338533420, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0418\u0437\u043E\u043B\u0435\u0447\u043E \u043F\u043E-\u0437\u0435\u043C\u043B\u044F\u043D\u0441\u043A\u0438"
   type: 1
   features:

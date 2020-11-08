@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: Second1-SpagettiCode
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -7937607877750570363, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0421\u043F\u0430\u0433\u0435\u0442\u0442\u0438 \"\u041A\u043E\u0434\""
   type: 1
   features:

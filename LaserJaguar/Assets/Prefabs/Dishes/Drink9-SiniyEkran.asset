@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: Drink9-SiniyEkran
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -8086930775248237928, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0421\u0438\u043D\u0438\u0439 \u044D\u043A\u0440\u0430\u043D"
   type: 2
   features:

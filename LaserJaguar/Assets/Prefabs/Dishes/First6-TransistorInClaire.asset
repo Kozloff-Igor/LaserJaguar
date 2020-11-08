@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: First6-TransistorInClaire
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -3670924675031685130, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0422\u0440\u0430\u043D\u0437\u0438\u0441\u0442\u043E\u0440 \u0432 \u043A\u043B\u044F\u0440\u0435"
   type: 0
   features:
