@@ -53,6 +53,10 @@ MonoBehaviour:
   DialogueName: Customer1-3
   isBoss: 0
   Good: {fileID: 21300000, guid: c8ca06232e12a8440817ec0855dc1214, type: 3}
+  NextMonologue: 
+  dish1: {fileID: 11400000, guid: 37903780ae09f99429cc3ee5a890f8e0, type: 2}
+  dish2: {fileID: 11400000, guid: c44270a56876716469433fc351d37866, type: 2}
+  drink: {fileID: 11400000, guid: 5e9e77065d575994494205b66ae08e73, type: 2}
   requiredFeaturesForFirst:
   - "\u0436\u0435\u043B\u0435\u0437\u043E"
   requiredFeaturesForSecond:
