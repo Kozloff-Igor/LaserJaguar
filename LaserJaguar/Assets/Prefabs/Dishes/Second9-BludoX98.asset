@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: Second9-BludoX98
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 3946027004081632563, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0411\u043B\u044E\u0434\u043E \u0425-98"
   type: 1
   features:

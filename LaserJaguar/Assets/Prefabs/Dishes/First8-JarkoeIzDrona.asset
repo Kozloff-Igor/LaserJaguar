@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: First8-JarkoeIzDrona
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -9108510950829718212, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0416\u0430\u0440\u043A\u043E\u0435 \u0438\u0437 \u0434\u0440\u043E\u043D\u0430"
   type: 0
   features:

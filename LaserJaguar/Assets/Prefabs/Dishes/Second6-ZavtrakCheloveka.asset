@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ccdc74885d7014ea491a49b59bbfb3, type: 3}
   m_Name: Second6-ZavtrakCheloveka
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -8137452161939443852, guid: 7310607840dee114790b24e6b95b94ab, type: 3}
   Name: "\u0417\u0430\u0432\u0442\u0440\u0430\u043A \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u043E\u0432
     (\u0438\u043C\u0438\u0442\u0430\u0446\u0438\u044F)"
   type: 1

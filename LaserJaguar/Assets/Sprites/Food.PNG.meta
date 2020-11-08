@@ -4,82 +4,82 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5362735838549604449
-    second: Food_0
+    second: Second5-PasserovannayaRuda
   - first:
       213: 8285215595028396028
-    second: Food_1
+    second: First7-SolanoidClassic
   - first:
       213: 9047690492799414569
-    second: Food_2
+    second: First1-StakeFromMetallama
   - first:
       213: -5395172569414051600
-    second: Food_3
+    second: First2-RaguPodKrilomSamoleta
   - first:
       213: -125841259962605178
-    second: Food_4
+    second: Second4-SaladMicroshemniy
   - first:
       213: -997740398760798882
-    second: Food_5
+    second: First3-BoltStroganoff
   - first:
       213: -9108510950829718212
-    second: Food_6
+    second: First8-JarkoeIzDrona
   - first:
       213: 7021786519927762060
-    second: Food_7
+    second: First5-VituhaNaGrile
   - first:
       213: -1884586238521606060
-    second: Food_8
+    second: ZFood_8
   - first:
       213: -8048224626093743244
-    second: Food_9
+    second: Second3-VoltmeniZharennie
   - first:
       213: -3670924675031685130
-    second: Food_10
+    second: First6-TransistorInClaire
   - first:
       213: 4034873625481168834
-    second: Food_11
+    second: Second7-LightGarnirTX
   - first:
       213: 3983405018662690971
-    second: Food_12
+    second: First4-KotletiRzhaviyPoyas
   - first:
       213: -7937607877750570363
-    second: Food_13
+    second: Second1-SpagettiCode
   - first:
       213: 8523978876290643007
-    second: Food_14
+    second: Second10-SaladSingularity
   - first:
       213: 3946027004081632563
-    second: Food_15
+    second: Second9-BludoX98
   - first:
       213: -8014275530069408155
-    second: Food_16
+    second: Second2-AzuKiberbooling
   - first:
       213: -6814677020220324006
-    second: Food_17
+    second: Second8-FishingVoFriture
   - first:
       213: -4169399362338533420
-    second: Food_18
+    second: Second11-IzolechoPoZemlyanski
   - first:
       213: -8137452161939443852
-    second: Food_19
+    second: Second6-ZavtrakCheloveka
   - first:
       213: -8837891727262127866
-    second: Food_20
+    second: Drink1-RzhaviyBriz
   - first:
       213: 4820688438788214557
-    second: Food_21
+    second: Drink2-B5200
   - first:
       213: 7908558994367449539
     second: Drink5-GayechniyKluch
   - first:
       213: -388672692512260373
-    second: Food_23
+    second: Drink3-ShodRazvalNaPlyazhe
   - first:
       213: -4554113282342118701
-    second: Food_24
+    second: Drink8-Polirol
   - first:
       213: 3981566668312230139
-    second: Food_25
+    second: ZFood_25
   - first:
       213: 4282315377695017999
     second: Drink4-SmertChelovekam
@@ -91,85 +91,85 @@ TextureImporter:
     second: Drink7-MagnitnayaBurya
   - first:
       213: 4346786072316611785
-    second: Food_29
+    second: Drink10-ZaverheniyeRaboty
   - first:
       213: -8086930775248237928
-    second: Food_30
+    second: Drink9-SiniyEkran
   - first:
       213: -7170046739969803390
-    second: Food_0
+    second: Second5-PasserovannayaRuda
   - first:
       213: -8446710804146226188
-    second: Food_1
+    second: First7-SolanoidClassic
   - first:
       213: 6561621045444343302
-    second: Food_2
+    second: First1-StakeFromMetallama
   - first:
       213: -884572577639588856
-    second: Food_3
+    second: First2-RaguPodKrilomSamoleta
   - first:
       213: -4865064644580475012
-    second: Food_4
+    second: Second4-SaladMicroshemniy
   - first:
       213: -3597850046355724103
-    second: Food_5
+    second: First3-BoltStroganoff
   - first:
       213: -6482169991118488914
-    second: Food_6
+    second: First8-JarkoeIzDrona
   - first:
       213: -993470813645030503
-    second: Food_7
+    second: First5-VituhaNaGrile
   - first:
       213: -3634955951100857955
-    second: Food_9
+    second: Second3-VoltmeniZharennie
   - first:
       213: 7528647106355659655
-    second: Food_10
+    second: First6-TransistorInClaire
   - first:
       213: 6199221441333847870
-    second: Food_11
+    second: Second7-LightGarnirTX
   - first:
       213: 6045078784637905078
-    second: Food_12
+    second: First4-KotletiRzhaviyPoyas
   - first:
       213: -2886109713829766477
-    second: Food_13
+    second: Second1-SpagettiCode
   - first:
       213: -2619959593524707233
-    second: Food_14
+    second: Second10-SaladSingularity
   - first:
       213: -141653980896516313
-    second: Food_15
+    second: Second9-BludoX98
   - first:
       213: 8300713878601798504
-    second: Food_16
+    second: Second2-AzuKiberbooling
   - first:
       213: -5909265454391114068
-    second: Food_17
+    second: Second8-FishingVoFriture
   - first:
       213: -1730909444196024773
-    second: Food_18
+    second: Second11-IzolechoPoZemlyanski
   - first:
       213: -1505577153056424459
-    second: Food_19
+    second: Second6-ZavtrakCheloveka
   - first:
       213: 508206408563802447
-    second: Food_20
+    second: Drink1-RzhaviyBriz
   - first:
       213: 445181274345038436
-    second: Food_21
+    second: Drink2-B5200
   - first:
       213: 3344871117503122836
     second: Drink5-GayechniyKluch
   - first:
       213: 3747472759046583847
-    second: Food_23
+    second: Drink3-ShodRazvalNaPlyazhe
   - first:
       213: -3207226667322605720
-    second: Food_24
+    second: Drink8-Polirol
   - first:
       213: 8232225389488762906
-    second: Food_25
+    second: ZFood_25
   - first:
       213: 5001192843378488964
     second: Drink4-SmertChelovekam
@@ -181,10 +181,10 @@ TextureImporter:
     second: Drink7-MagnitnayaBurya
   - first:
       213: -6697327544901115284
-    second: Food_29
+    second: Drink10-ZaverheniyeRaboty
   - first:
       213: -6850088027480193720
-    second: Food_30
+    second: Drink9-SiniyEkran
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -306,7 +306,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Food_0
+      name: Second5-PasserovannayaRuda
       rect:
         serializedVersion: 2
         x: 24
@@ -327,7 +327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_1
+      name: First7-SolanoidClassic
       rect:
         serializedVersion: 2
         x: 150
@@ -348,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_2
+      name: First1-StakeFromMetallama
       rect:
         serializedVersion: 2
         x: 263
@@ -369,7 +369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_3
+      name: First2-RaguPodKrilomSamoleta
       rect:
         serializedVersion: 2
         x: 397
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_4
+      name: Second4-SaladMicroshemniy
       rect:
         serializedVersion: 2
         x: 536
@@ -411,7 +411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_5
+      name: First3-BoltStroganoff
       rect:
         serializedVersion: 2
         x: 654
@@ -432,7 +432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_6
+      name: First8-JarkoeIzDrona
       rect:
         serializedVersion: 2
         x: 749
@@ -453,7 +453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_7
+      name: First5-VituhaNaGrile
       rect:
         serializedVersion: 2
         x: 29
@@ -474,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_8
+      name: ZFood_8
       rect:
         serializedVersion: 2
         x: 196
@@ -495,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_9
+      name: Second3-VoltmeniZharennie
       rect:
         serializedVersion: 2
         x: 719
@@ -516,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_10
+      name: First6-TransistorInClaire
       rect:
         serializedVersion: 2
         x: 146
@@ -537,7 +537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_11
+      name: Second7-LightGarnirTX
       rect:
         serializedVersion: 2
         x: 262
@@ -558,7 +558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_12
+      name: First4-KotletiRzhaviyPoyas
       rect:
         serializedVersion: 2
         x: 382
@@ -579,7 +579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_13
+      name: Second1-SpagettiCode
       rect:
         serializedVersion: 2
         x: 479
@@ -600,7 +600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_14
+      name: Second10-SaladSingularity
       rect:
         serializedVersion: 2
         x: 621
@@ -621,7 +621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_15
+      name: Second9-BludoX98
       rect:
         serializedVersion: 2
         x: 20
@@ -642,7 +642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_16
+      name: Second2-AzuKiberbooling
       rect:
         serializedVersion: 2
         x: 137
@@ -663,7 +663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_17
+      name: Second8-FishingVoFriture
       rect:
         serializedVersion: 2
         x: 266
@@ -684,7 +684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_18
+      name: Second11-IzolechoPoZemlyanski
       rect:
         serializedVersion: 2
         x: 380
@@ -705,7 +705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_19
+      name: Second6-ZavtrakCheloveka
       rect:
         serializedVersion: 2
         x: 482
@@ -726,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_20
+      name: Drink1-RzhaviyBriz
       rect:
         serializedVersion: 2
         x: 38
@@ -747,7 +747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_21
+      name: Drink2-B5200
       rect:
         serializedVersion: 2
         x: 108
@@ -789,7 +789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_23
+      name: Drink3-ShodRazvalNaPlyazhe
       rect:
         serializedVersion: 2
         x: 282
@@ -810,7 +810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_24
+      name: Drink8-Polirol
       rect:
         serializedVersion: 2
         x: 359
@@ -831,7 +831,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_25
+      name: ZFood_25
       rect:
         serializedVersion: 2
         x: 423
@@ -915,7 +915,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_29
+      name: Drink10-ZaverheniyeRaboty
       rect:
         serializedVersion: 2
         x: 210
@@ -936,7 +936,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_30
+      name: Drink9-SiniyEkran
       rect:
         serializedVersion: 2
         x: 308
