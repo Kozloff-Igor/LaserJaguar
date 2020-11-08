@@ -65,9 +65,16 @@ public class ClientManager : MonoBehaviour
     {
         if (currentClient)
         {
+            var monoName = currentClient.NextMonologue;
             if (currentClient.isBoss)
                 AudioManager.instance.StartClip(1);
             Destroy(currentClient.gameObject);
+            if (monoName != "")
+            {
+                DialogueManager.Internal.MonologueStart(monoName);
+                FindObjectOfType<Conveyer>().ClearConveyer();
+                return;
+            }
         }
         currentClient = Instantiate(clients.Dequeue(), transform);
         if (currentClient.isBoss)

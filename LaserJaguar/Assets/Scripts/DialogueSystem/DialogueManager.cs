@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager _internal;
     private string[] features;
 
+    private bool isMonologue;
+
     public void TestDialogStart()
     {
         DialogueManager.Internal.DialogueStart("Example", new string[] { "Соленный", "Кислотный", "Ржавый" });
@@ -34,8 +36,17 @@ public class DialogueManager : MonoBehaviour
     public void DialogueStart(string name, string[] features)
     {
         if (name == string.Empty) return;
+        isMonologue = false;
         fileName = name;
         this.features = features;
+        Load();
+    }
+
+    public void MonologueStart(string name)
+    {
+        if (name == string.Empty) return;
+        isMonologue = true;
+        fileName = name;
         Load();
     }
 
@@ -55,7 +66,8 @@ public class DialogueManager : MonoBehaviour
     void Load()
     {
         scrollRect.gameObject.SetActive(true);
-        bubble.gameObject.SetActive(true);
+        if (!isMonologue)
+            bubble.gameObject.SetActive(true);
 
         if (lastName == fileName) // проверка, чтобы не загружать уже загруженный файл
         {

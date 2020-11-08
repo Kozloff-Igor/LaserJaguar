@@ -50,7 +50,7 @@ public class Conveyer : MonoBehaviour
         PutDishes(drinks, drinkGroup);
     }
 
-    void ClearConveyer()
+    public void ClearConveyer()
     {
         ClearGroup(firsts);
         ClearGroup(seconds);

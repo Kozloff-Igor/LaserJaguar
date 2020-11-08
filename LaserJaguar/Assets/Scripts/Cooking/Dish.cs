@@ -17,6 +17,7 @@ public class Dish : MonoBehaviour
     public string Name { get => data.Name; }
     public DishType type { get => data.type; }
     public string[] features { get => data.features; }
+    public int tier { get => data.Tier; }
 
     public List<string> visibleFeatures = new List<string>();
 

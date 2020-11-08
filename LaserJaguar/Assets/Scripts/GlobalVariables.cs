@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
@@ -11,6 +12,7 @@ public class GlobalVariables : MonoBehaviour
     public string[] features;
     public Dish dishPrefab;
     public Transform canvas;
+    public int tier = 1;
 
     void Start()
     {

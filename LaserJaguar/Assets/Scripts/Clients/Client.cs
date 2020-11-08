@@ -9,6 +9,8 @@ public class Client : MonoBehaviour
     public string DialogueName;
     public bool isBoss;
     public Sprite Good;
+
+    public string NextMonologue;
     //public Dish firstDish;
     //public Dish secondDish;
     //public Dish Drink;
