@@ -76,6 +76,7 @@ public class Conveyer : MonoBehaviour
 
     public void ClearConveyer()
     {
+        table.Clear();
         ClearGroup(firsts);
         ClearGroup(seconds);
         ClearGroup(drinks);
@@ -161,5 +162,6 @@ public class Conveyer : MonoBehaviour
         if (!table.ContainsKey(DishType.First) || !table.ContainsKey(DishType.Second) || !table.ContainsKey(DishType.Drink))
             return;
         FindObjectOfType<ClientManager>().CompleteOrder(table[DishType.First], table[DishType.Second], table[DishType.Drink]);
+        ClearConveyer();
     }
 }

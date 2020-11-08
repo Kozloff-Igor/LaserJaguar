@@ -80,6 +80,11 @@ public class ClientManager : MonoBehaviour
 
     public void NextClient()
     {
+        if (GlobalVariables.instance.tier == 3)
+        {
+
+            return;
+        }
         if (!currentClient && clients.Count == 0)
             FillQueue();
 

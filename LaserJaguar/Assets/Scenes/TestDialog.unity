@@ -654,6 +654,7 @@ MonoBehaviour:
   - {fileID: 6629279035052344501, guid: 571cd2a1dc5b32445bdf4292a12c58ab, type: 3}
   - {fileID: 6629279035052344501, guid: 550be85f0ed691342be001821a91a502, type: 3}
   - {fileID: 6629279035052344501, guid: 47b4e57dc711254458605f4f74454045, type: 3}
+  - {fileID: 6629279035052344501, guid: 2bd76af7a7df6db4fba0577033faedef, type: 3}
   currentClient: {fileID: 0}
   isDebug: 0
 --- !u!1 &496676288
