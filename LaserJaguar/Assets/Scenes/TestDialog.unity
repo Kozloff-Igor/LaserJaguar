@@ -647,9 +647,15 @@ MonoBehaviour:
   - {fileID: 6629279035052344501, guid: e335dc99497ecd6469897568c3184e82, type: 3}
   - {fileID: 6629279035052344501, guid: ed0d7b5ef85189c479f75248bb887180, type: 3}
   tier2Clients:
-  - {fileID: 6629279035052344501, guid: 2eb5a277db1ccca478961b2a2a0ed4f0, type: 3}
-  - {fileID: 6629279035052344501, guid: db41028b6a132334ca4d77728e752b50, type: 3}
+  - {fileID: 6629279035052344501, guid: 0e5be4b8e37952b4bb3abefb82b880e9, type: 3}
+  - {fileID: 6629279035052344501, guid: d13c5072a5779894386653129cc3c8f4, type: 3}
+  - {fileID: 6629279035052344501, guid: f3ba91f50b5119e4280d5ad09459f6b7, type: 3}
+  - {fileID: 6629279035052344501, guid: 6d9c1b6c9c2f28a4397852d3fc1b262c, type: 3}
+  - {fileID: 6629279035052344501, guid: 571cd2a1dc5b32445bdf4292a12c58ab, type: 3}
+  - {fileID: 6629279035052344501, guid: 550be85f0ed691342be001821a91a502, type: 3}
+  - {fileID: 6629279035052344501, guid: 47b4e57dc711254458605f4f74454045, type: 3}
   currentClient: {fileID: 0}
+  isDebug: 0
 --- !u!1 &496676288
 GameObject:
   m_ObjectHideFlags: 0

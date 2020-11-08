@@ -52,7 +52,7 @@ MonoBehaviour:
   Name: Robot
   DialogueName: Customer2_4
   isBoss: 0
-  Good: {fileID: 21300000, guid: a23ae7c4362e74140b706f08a56c6e10, type: 3}
+  Good: {fileID: 21300000, guid: c8ca06232e12a8440817ec0855dc1214, type: 3}
   NextMonologue: 
   dish1: {fileID: 0}
   dish2: {fileID: 11400000, guid: a4e4447b09b64da4e8df0ee0807578f1, type: 2}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d2afbbd6aaa72c43bd6050e753b79c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87856787e83c3e0469b3ba1a7a7954bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
