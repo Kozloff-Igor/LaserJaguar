@@ -1,0 +1,22 @@
+﻿<dialogue name="Customer2-2">
+  <node id="0" npcText="bz0r5rty, приветствую. Я a8k3mnt солевое блюдо, солевой гарнир... Напиток по желанию. Насыщенный. Но если бы не ваш pt9n5lak...">
+    <answer text="Солевое блюдо?" toNode="1" />
+    <answer text="Насыщенный?" toNode="2" />
+    <answer text="Если бы не мой кто?" toNode="3" />
+  </node>
+  <node id="1" npcText="Солевое... не солёное. kb1b6bly, соля... ноид. Заказ?" >
+<answer text="Назад" toNode="0" />
+</node>
+  <node id="2" npcText="Насыщенный... богатый. nt4l0ktp, концент... рированный. Заказ?" >
+<answer text="Назад" toNode="0" />
+</node>
+  <node id="3" npcText="Ваш... создатель. kn3d8blb, дед. Если бы не он... было бы лучшее заведение района. Слишком любил... декаданс. Осадочные настроения, так сказать. А так... Дайте мой заказ." >
+<answer text="Назад" toNode="0" />
+</node>
+  <node id="4" npcText="Удовлет... ворительно. kp7y1laq, всё в соответствии с тре... бованиями. Я прощаюсь." isWin="True">
+    <answer text="Следующий!" exit="True" />
+  </node>
+  <node id="5" npcText="Неудовлет... ворительно. na0d6tnz, слухи подтвердились. Я покидаю это место. Прощайте." isLose="True">
+    <answer text="Следующий!" exit="True" />
+  </node>
+</dialogue>
