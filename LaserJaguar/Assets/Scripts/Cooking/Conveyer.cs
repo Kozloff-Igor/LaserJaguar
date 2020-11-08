@@ -24,7 +24,7 @@ public class Conveyer : MonoBehaviour
     {
         ClearConveyer();
         var tier = GlobalVariables.instance.tier;
-        var FirstDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.First && d.tier == tier);
+        var FirstDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.First && d.tier <= tier);
         Dish dish = null;
         if (client.dish1)
         {
@@ -40,7 +40,7 @@ public class Conveyer : MonoBehaviour
         firsts.Add(dish);
         PutDishes(firsts, firstGroup);
 
-        var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Second && d.tier == tier);
+        var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Second && d.tier <= tier);
         Dish sDish = null;
         if (client.dish2)
         {
@@ -56,7 +56,7 @@ public class Conveyer : MonoBehaviour
         seconds.Add(sDish);
         PutDishes(seconds, secondGroup);
 
-        var Drinks = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Drink && d.tier == tier);
+        var Drinks = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Drink && d.tier <= tier);
         Dish drink = null;
         if (client.drink)
         {

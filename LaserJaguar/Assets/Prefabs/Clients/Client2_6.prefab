@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Robot
-  DialogueName: Customer2_6
+  DialogueName: Customer2-6
   isBoss: 0
   Good: {fileID: 21300000, guid: 321ed10db84d4a74580415e6bad778de, type: 3}
   NextMonologue: 
