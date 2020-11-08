@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allClients:
+  - {fileID: 6629279035052344501, guid: 45d4f9b216731af479c3f8c9fd2137f4, type: 3}
   - {fileID: 6629279035052344501, guid: 2eb5a277db1ccca478961b2a2a0ed4f0, type: 3}
   - {fileID: 6629279035052344501, guid: db41028b6a132334ca4d77728e752b50, type: 3}
   - {fileID: 6629279035052344501, guid: 1eeaa81d2a716f040bec7234f3889b05, type: 3}
