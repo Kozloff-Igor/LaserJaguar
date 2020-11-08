@@ -6,6 +6,7 @@ using UnityEngine;
 public class ClientManager : MonoBehaviour
 {
     public Client[] allClients;
+    public Client[] tier2Clients;
     public Client currentClient;
 
     private Queue<Client> clients = new Queue<Client>();
@@ -37,6 +38,11 @@ public class ClientManager : MonoBehaviour
             DialogueManager.Internal.StartWin();
             cat.Count++;
             currentClient.MakeGood();
+            if (currentClient.isBoss)
+            {
+                GlobalVariables.instance.tier++;
+                FillQueue();
+            }
         }
         else
         {
@@ -55,7 +61,11 @@ public class ClientManager : MonoBehaviour
 
     void FillQueue()
     {
-        foreach (var client in allClients)
+        var _clients = allClients;
+        if (GlobalVariables.instance.tier == 2)
+            _clients = tier2Clients;
+
+        foreach (var client in _clients)
         {
             clients.Enqueue(client);
         }
