@@ -11,9 +11,9 @@ public class Client : MonoBehaviour
     public Sprite Good;
 
     public string NextMonologue;
-    //public Dish firstDish;
-    //public Dish secondDish;
-    //public Dish Drink;
+    public DishData dish1;
+    public DishData dish2;
+    public DishData drink;
 
     public string[] requiredFeaturesForFirst;
     public string[] requiredFeaturesForSecond;
