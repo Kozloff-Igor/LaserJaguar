@@ -41,7 +41,7 @@ public class ClientManager : MonoBehaviour
             currentClient.MakeGood();
             if (currentClient.isBoss)
             {
-                GlobalVariables.instance.tier++;
+                WinTier();
                 FillQueue();
             }
         }
@@ -51,7 +51,7 @@ public class ClientManager : MonoBehaviour
             if (currentClient.isBoss)
             {
                 if (isDebug)// тест перехода на тир2
-                    GlobalVariables.instance.tier++;
+                    WinTier();
                 FillQueue();
             }
             DialogueManager.Internal.StartLose();
@@ -105,5 +105,11 @@ public class ClientManager : MonoBehaviour
         if (currentClient.isBoss)
             AudioManager.instance.StartClip(2);
         StartOrder();
+    }
+
+    void WinTier()
+    {
+        GlobalVariables.instance.tier++;
+        GlobalVariables.instance.ChangeNews();
     }
 }

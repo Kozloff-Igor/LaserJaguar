@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GlobalVariables : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class GlobalVariables : MonoBehaviour
     public Transform canvas;
     public int tier = 1;
     public GameObject ButtonNewspaper;
+    public Image Newspaper;
+    public Sprite News;
 
     void Start()
     {
@@ -38,5 +41,10 @@ public class GlobalVariables : MonoBehaviour
             dish.gameObject.SetActive(false);
             Dishes.Add(dish);
         }
+    }
+
+    public void ChangeNews()
+    {
+        Newspaper.sprite = News;
     }
 }
