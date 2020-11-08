@@ -47,6 +47,9 @@ public class DialogueManager : MonoBehaviour
         if (name == string.Empty) return;
         isMonologue = true;
         fileName = name;
+
+        GlobalVariables.instance.ButtonNewspaper.SetActive(true);
+
         Load();
     }
 
