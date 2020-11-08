@@ -9,9 +9,11 @@ public class ClientManager : MonoBehaviour
     public Client currentClient;
 
     private Queue<Client> clients = new Queue<Client>();
+    private Cat cat;
 
     private void Start()
     {
+        cat = FindObjectOfType<Cat>();
         FillQueue();
     }
     public void StartOrder()
@@ -33,9 +35,11 @@ public class ClientManager : MonoBehaviour
             second.AddVisibleFeatures(currentClient.requiredFeaturesForSecond);
             drink.AddVisibleFeatures(currentClient.requiredFeaturesForDrink);
             DialogueManager.Internal.StartWin();
+            cat.Count++;
         }
         else
         {
+            cat.Count--;
             if (currentClient.isBoss)
                 FillQueue();
             DialogueManager.Internal.StartLose();
@@ -58,7 +62,7 @@ public class ClientManager : MonoBehaviour
 
     public void NextClient()
     {
-        if (currentClient) Destroy(currentClient);
+        if (currentClient) Destroy(currentClient.gameObject);
         currentClient = Instantiate(clients.Dequeue(), transform);
         StartOrder();
     }

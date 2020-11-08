@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Robot
   DialogueName: Customer1-2
+  isBoss: 0
   requiredFeaturesForFirst:
   - "\u0430\u043B\u044E\u043C\u0438\u043D\u0438\u0439"
   requiredFeaturesForSecond:
@@ -91,8 +92,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.43, y: -21.25}
-  m_SizeDelta: {x: 453.33963, y: 695.9862}
+  m_AnchoredPosition: {x: 30.21, y: -3.92}
+  m_SizeDelta: {x: 780.3696, y: 977.6854}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6629279035774627698
 CanvasRenderer:
