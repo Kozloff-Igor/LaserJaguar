@@ -82,7 +82,8 @@ public class ClientManager : MonoBehaviour
     {
         if (GlobalVariables.instance.tier == 3)
         {
-
+            GlobalVariables.instance.FinalComics.SetActive(true);
+            AudioManager.instance.StartClip(5);
             return;
         }
         if (!currentClient && clients.Count == 0)
@@ -92,7 +93,7 @@ public class ClientManager : MonoBehaviour
         {
             var monoName = currentClient.NextMonologue;
             if (currentClient.isBoss)
-                AudioManager.instance.StartClip(1);
+                AudioManager.instance.StartClip(3);
             Destroy(currentClient.gameObject);
             if (monoName != "")
             {
@@ -103,7 +104,14 @@ public class ClientManager : MonoBehaviour
         }
         currentClient = Instantiate(clients.Dequeue(), transform);
         if (currentClient.isBoss)
-            AudioManager.instance.StartClip(2);
+            if (GlobalVariables.instance.tier == 2)
+            {
+                AudioManager.instance.StartClip(4);
+            }
+            else
+            {
+                AudioManager.instance.StartClip(2);
+            }
         StartOrder();
     }
 

@@ -1028,9 +1028,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: 11d8dd83fe9d29f4ca8c6066ed6e9a9f, type: 3}
-  - {fileID: 8300000, guid: 01e66c4dcbdc71c4b9b9586c8042caa3, type: 3}
-  - {fileID: 8300000, guid: 3e94a76a0c9ccce419e44a32a84ae800, type: 3}
   - {fileID: 8300000, guid: 973eed435d09d934c86782a5928885ad, type: 3}
+  - {fileID: 8300000, guid: 3e94a76a0c9ccce419e44a32a84ae800, type: 3}
+  - {fileID: 8300000, guid: e20db6eab7d01c5459c506baa66061b8, type: 3}
+  - {fileID: 8300000, guid: deed303b8fb961849a90ddc922a23446, type: 3}
+  - {fileID: 8300000, guid: 01e66c4dcbdc71c4b9b9586c8042caa3, type: 3}
 --- !u!1 &527955992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6294403658437178892, guid: b08a66bb83aa7454fb4a9b324d39ce59,
@@ -3302,9 +3304,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: d3af2a385a2d37d47b917a2c64068c32, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: e4839f3f755905b49b29120bad27265a, type: 3}
+  - {fileID: 21300000, guid: c53cf32f568f8044585e9815cd112e9a, type: 3}
+  - {fileID: 21300000, guid: 5b2098dbc6fba4e46890600a647e87ee, type: 3}
 --- !u!114 &1460390048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,7 +3380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3af2a385a2d37d47b917a2c64068c32, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4839f3f755905b49b29120bad27265a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3941,6 +3943,7 @@ MonoBehaviour:
   ButtonNewspaper: {fileID: 1443178098}
   Newspaper: {fileID: 984347899}
   News: {fileID: 21300000, guid: 1852b24bbdcd58749acfcf38281e7f71, type: 3}
+  FinalComics: {fileID: 1460390045}
 --- !u!4 &1712387676
 Transform:
   m_ObjectHideFlags: 0

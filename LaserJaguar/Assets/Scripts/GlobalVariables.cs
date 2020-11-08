@@ -17,6 +17,8 @@ public class GlobalVariables : MonoBehaviour
     public Image Newspaper;
     public Sprite News;
 
+    public GameObject FinalComics;
+
     void Start()
     {
         if (instance == null)
