@@ -93,7 +93,7 @@ public class DialogueManager : MonoBehaviour
                         answer.text = reader.GetAttribute("text");
 
                         int number;
-                        if (int.TryParse(reader.GetAttribute("toNode"), out number)) answer.toNode = number; else answer.toNode = 0;
+                        if (int.TryParse(reader.GetAttribute("toNode"), out number)) answer.toNode = number; else answer.toNode = -1;
 
                         bool result;
                         if (bool.TryParse(reader.GetAttribute("exit"), out result)) answer.exit = result; else answer.exit = false;
@@ -139,7 +139,7 @@ public class DialogueManager : MonoBehaviour
         height = clone.rect.sizeDelta.y;
         clone.rect.anchoredPosition = new Vector2(0, -height / 2 - curY);
 
-        if (toNode > 0) SetNextDialogue(clone.button, toNode);
+        if (toNode > -1) SetNextDialogue(clone.button, toNode);
         if (exit) SetExitDialogue(clone.button);
 
         buttons.Add(clone.rect);
