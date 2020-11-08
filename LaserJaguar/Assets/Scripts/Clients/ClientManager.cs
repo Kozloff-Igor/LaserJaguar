@@ -8,6 +8,7 @@ public class ClientManager : MonoBehaviour
     public Client[] allClients;
     public Client[] tier2Clients;
     public Client currentClient;
+    public bool isDebug;
 
     private Queue<Client> clients = new Queue<Client>();
     private Cat cat;
@@ -15,7 +16,7 @@ public class ClientManager : MonoBehaviour
     private void Start()
     {
         cat = FindObjectOfType<Cat>();
-        FillQueue();
+        //FillQueue();
     }
     public void StartOrder()
     {
@@ -48,13 +49,19 @@ public class ClientManager : MonoBehaviour
         {
             cat.Count--;
             if (currentClient.isBoss)
+            {
+                if (isDebug)// тест перехода на тир2
+                    GlobalVariables.instance.tier++;
                 FillQueue();
+            }
             DialogueManager.Internal.StartLose();
         }
     }
 
-    bool CheckDish(string[] reqFeatures, Dish dish)
+    bool CheckDish(string[] reqFeatures, Dish dish, DishData reqDish = null)
     {
+        if (reqDish)
+            return dish.data == reqDish;
         return reqFeatures.Count(f => dish.features.Contains(f)) == reqFeatures.Length;
 
     }
@@ -73,6 +80,9 @@ public class ClientManager : MonoBehaviour
 
     public void NextClient()
     {
+        if (!currentClient && clients.Count == 0)
+            FillQueue();
+
         if (currentClient)
         {
             var monoName = currentClient.NextMonologue;

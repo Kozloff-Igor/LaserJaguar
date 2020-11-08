@@ -23,26 +23,50 @@ public class Conveyer : MonoBehaviour
     public void StartCooking(Client client)
     {
         ClearConveyer();
-
-        var FirstDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.First);
-        var reqFirstDishes = FirstDishes.Where(d => client.requiredFeaturesForFirst.Count(f => d.features.Contains(f)) == client.requiredFeaturesForFirst.Length).ToArray();
-        var dish = reqFirstDishes[Random.Range(0, reqFirstDishes.Length)];
+        var tier = GlobalVariables.instance.tier;
+        var FirstDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.First && d.tier == tier);
+        Dish dish = null;
+        if (client.dish1)
+        {
+            dish = FirstDishes.FirstOrDefault(d => d.data == client.dish1);
+        }
+        if (!dish)
+        {
+            var reqFirstDishes = FirstDishes.Where(d => client.requiredFeaturesForFirst.Count(f => d.features.Contains(f)) == client.requiredFeaturesForFirst.Length).ToArray();
+            dish = reqFirstDishes[Random.Range(0, reqFirstDishes.Length)];
+        }
 
         firsts = FirstDishes.Where(d => d != dish).Take(2).ToList();
         firsts.Add(dish);
         PutDishes(firsts, firstGroup);
 
-        var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Second);
-        var reqSecDishes = SecondDishes.Where(d => client.requiredFeaturesForSecond.Count(f => d.features.Contains(f)) == client.requiredFeaturesForSecond.Length).ToArray();
-        var sDish = reqSecDishes[Random.Range(0, reqSecDishes.Length)];
+        var SecondDishes = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Second && d.tier == tier);
+        Dish sDish = null;
+        if (client.dish2)
+        {
+            sDish = FirstDishes.FirstOrDefault(d => d.data == client.dish2);
+        }
+        if (!sDish)
+        {
+            var reqSecDishes = SecondDishes.Where(d => client.requiredFeaturesForSecond.Count(f => d.features.Contains(f)) == client.requiredFeaturesForSecond.Length).ToArray();
+            sDish = reqSecDishes[Random.Range(0, reqSecDishes.Length)];
+        }
 
         seconds = SecondDishes.Where(d => d != sDish).Take(2).ToList();
         seconds.Add(sDish);
         PutDishes(seconds, secondGroup);
 
-        var Drinks = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Drink);
-        var reqDrinks = Drinks.Where(d => client.requiredFeaturesForDrink.Count(f => d.features.Contains(f)) == client.requiredFeaturesForDrink.Length).ToArray();
-        var drink = reqDrinks[Random.Range(0, reqDrinks.Length)];
+        var Drinks = GlobalVariables.instance.Dishes.Where(d => d.type == DishType.Drink && d.tier == tier);
+        Dish drink = null;
+        if (client.drink)
+        {
+            drink = FirstDishes.FirstOrDefault(d => d.data == client.drink);
+        }
+        if (!drink)
+        {
+            var reqDrinks = Drinks.Where(d => client.requiredFeaturesForDrink.Count(f => d.features.Contains(f)) == client.requiredFeaturesForDrink.Length).ToArray();
+            drink = reqDrinks[Random.Range(0, reqDrinks.Length)];
+        }
 
         drinks = Drinks.Where(d => d != drink).Take(2).ToList();
         drinks.Add(drink);
