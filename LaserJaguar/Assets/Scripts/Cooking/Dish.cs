@@ -29,6 +29,7 @@ public class Dish : MonoBehaviour
     public void Init()
     {
         nameText.text = data.Name;
+        AddVisibleFeatures(data.openFeatures);
         // добавить спрайт
         RefreshFeatures();
     }
