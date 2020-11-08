@@ -12,6 +12,7 @@ public class Dish : MonoBehaviour
     public Transform featureGroup;
     public Button full;
     public Button small;
+    public int index;
 
     public string Name { get => data.Name; }
     public DishType type { get => data.type; }

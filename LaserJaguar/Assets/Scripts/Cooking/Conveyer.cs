@@ -6,10 +6,14 @@ using UnityEngine.UI;
 
 public class Conveyer : MonoBehaviour
 {
-    public RectTransform firstGroup;
-    public RectTransform secondGroup;
-    public RectTransform drinkGroup;
-    public RectTransform tableGroup;
+    public RectTransform[] firstGroup;
+    public RectTransform[] secondGroup;
+    public RectTransform[] drinkGroup;
+
+    //public RectTransform tableGroup;
+    public RectTransform tableFirst;
+    public RectTransform tableSecond;
+    public RectTransform tableDrink;
 
     private Dictionary<DishType, Dish> table = new Dictionary<DishType, Dish>();
 
@@ -62,7 +66,7 @@ public class Conveyer : MonoBehaviour
             dish.gameObject.SetActive(false);
         }
     }
-    void PutDishes(List<Dish> dishes, Transform parent)
+    void PutDishes(List<Dish> dishes, Transform[] parent)
     {
         for (var i = 0; i < dishes.Count; i++)
         {
@@ -74,7 +78,8 @@ public class Conveyer : MonoBehaviour
         foreach (var dish in dishes)
         {
             //var dishObj = GameObject.Instantiate(dish, parent);
-            dish.transform.SetParent(parent);
+            dish.index = dishes.IndexOf(dish);
+            dish.transform.SetParent(parent[dish.index]);
             dish.full.onClick.AddListener(() => MoveToTable(dish));
             dish.small.onClick.AddListener(() => MoveBack(dish));
             dish.SetSize(true);
@@ -89,7 +94,19 @@ public class Conveyer : MonoBehaviour
         if (table.ContainsKey(dish.type)) MoveBack(table[dish.type]);
         table.Add(dish.type, dish);
         dish.SetSize(false);
-        dish.transform.SetParent(tableGroup);
+
+        switch (dish.type)
+        {
+            case DishType.First:
+                dish.transform.SetParent(tableFirst);
+                break;
+            case DishType.Second:
+                dish.transform.SetParent(tableSecond);
+                break;
+            default:
+                dish.transform.SetParent(tableDrink);
+                break;
+        }
         //dish.GetComponent<Button>().onClick.RemoveAllListeners();
         //dish.GetComponent<Button>().onClick.AddListener(() => MoveBack(dish));
     }
@@ -101,13 +118,13 @@ public class Conveyer : MonoBehaviour
         switch (dish.type)
         {
             case DishType.First:
-                dish.transform.SetParent(firstGroup);
+                dish.transform.SetParent(firstGroup[dish.index]);
                 break;
             case DishType.Second:
-                dish.transform.SetParent(secondGroup);
+                dish.transform.SetParent(secondGroup[dish.index]);
                 break;
             default:
-                dish.transform.SetParent(drinkGroup);
+                dish.transform.SetParent(drinkGroup[dish.index]);
                 break;
         }
 
