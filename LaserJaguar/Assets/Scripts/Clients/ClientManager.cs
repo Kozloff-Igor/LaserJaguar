@@ -36,6 +36,7 @@ public class ClientManager : MonoBehaviour
             drink.AddVisibleFeatures(currentClient.requiredFeaturesForDrink);
             DialogueManager.Internal.StartWin();
             cat.Count++;
+            currentClient.MakeGood();
         }
         else
         {

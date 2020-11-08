@@ -24,7 +24,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6629279035052344500}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1089.0377}
   m_LocalScale: {x: 4.0167365, y: 4.0167365, z: 4.0167365}
   m_Children:
@@ -32,10 +32,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171, y: 27}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6629279035052344501
 MonoBehaviour:
@@ -51,6 +51,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Robot
   DialogueName: Customer1-3
+  isBoss: 0
+  Good: {fileID: 21300000, guid: c8ca06232e12a8440817ec0855dc1214, type: 3}
   requiredFeaturesForFirst:
   - "\u0436\u0435\u043B\u0435\u0437\u043E"
   requiredFeaturesForSecond:
@@ -91,10 +93,10 @@ RectTransform:
   m_Father: {fileID: 6629279035052344498}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.43, y: -21.25}
-  m_SizeDelta: {x: 453.33963, y: 695.9862}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6629279035774627698
 CanvasRenderer:
@@ -123,7 +125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 645d9d009998ae24e873f03201765b6b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87856787e83c3e0469b3ba1a7a7954bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
