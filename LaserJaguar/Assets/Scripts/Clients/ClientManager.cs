@@ -63,8 +63,15 @@ public class ClientManager : MonoBehaviour
 
     public void NextClient()
     {
-        if (currentClient) Destroy(currentClient.gameObject);
+        if (currentClient)
+        {
+            if (currentClient.isBoss)
+                AudioManager.instance.StartClip(1);
+            Destroy(currentClient.gameObject);
+        }
         currentClient = Instantiate(clients.Dequeue(), transform);
+        if (currentClient.isBoss)
+            AudioManager.instance.StartClip(2);
         StartOrder();
     }
 }
